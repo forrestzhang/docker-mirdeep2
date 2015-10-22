@@ -22,8 +22,7 @@ RUN apt-get update && \
 
 RUN mkdir /opt/software
 WORKDIR /opt/software
-ADD https://www.mdc-berlin.de/43969303/en/research/research_teams/systems_biology_of_gene_regulatory_elements/projects/miRDeep/mirdeep2_0_0_7.zi
-p /opt/software/
+ADD https://www.mdc-berlin.de/43969303/en/research/research_teams/systems_biology_of_gene_regulatory_elements/projects/miRDeep/mirdeep2_0_0_7.zip /opt/software/
 RUN wget ftp://selab.janelia.org/pub/software/squid/squid-1.9g.tar.gz
 ADD http://bioinformatics.psb.ugent.be/supplementary_data/erbon/nov2003/downloads/randfold-2.0.tar.gz /opt/software/
 
